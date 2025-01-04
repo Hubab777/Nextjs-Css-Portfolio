@@ -1,0 +1,139 @@
+/* Hero container */
+.hero-container {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: left; /* Ensures everything inside the container aligns to the left */
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+/* Adjust background size for different screens */
+@media (min-width: 768px) {
+  .hero-container {
+    background-size: 40%;
+    background-position: right 100px top 100px;
+  }
+}
+
+/* Hero content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content from top (left side if it's flex) */
+  align-items: flex-start; /* Aligns items to the left */
+  height: calc(100vh - 60px);
+  padding: 1rem;
+  text-align: left; 
+}
+
+/* Hero text */
+.hero-text {
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: left; 
+}
+
+/* Hero name */
+.hero-name {
+  font-size: 2.5rem;
+  line-height: 0.4;
+  text-align: left; 
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 4rem; /* Adjusted for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-name {
+    font-size: 5rem; /* Adjusted for desktops */
+  }
+}
+
+/* Divider */
+.divider {
+  background-color: #4b5563; /* bg-gray-600 */
+  height: 4px;
+  width: 90%;
+  max-width: 530px;
+  margin: 0 ;
+  text-align: left; 
+}
+
+/* Hero description */
+.hero-description {
+  max-width: 90%;
+  margin: 1rem auto;
+  text-align: left; 
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    max-width: 800px;
+  }
+}
+
+.type-animation {
+  font-size: 1.5rem;
+  color: #fd8d30;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .type-animation {
+    font-size: 2rem;
+  }
+}
+
+.hero-subtext {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-subtext p {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .hero-subtext {
+    font-size: 1.125rem; /* text-lg */
+  }
+}
+
+/* Resume button */
+.resume-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #14b8a6, #f97316, #374151);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+  text-align: left; 
+}
+
+.resume-button:hover {
+  background: linear-gradient(to right, #fde68a, #f87171, #6b7280);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .resume-button {
+    padding: 0.75rem 2rem;
+  }
+}

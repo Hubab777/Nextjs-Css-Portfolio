@@ -1,0 +1,33 @@
+/* Container Styles */
+.projects-container {
+    padding-top: 8rem; /* Equivalent to pt-32 */
+    max-width: 1200px; /* Restrict width */
+    margin: 0 auto; /* Center container */
+    padding-left: 1rem; /* Responsive padding */
+    padding-right: 1rem;
+  }
+  
+  /* Grid Styles */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 2.5rem; /* Default gap between cards */
+  
+    /* Medium screens (md) */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 2rem; /* Adjust gap */
+    }
+  
+    /* Large screens (lg) */
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr); /* Three columns */
+      gap: 2.5rem 1rem; /* Adjust gap for better layout */
+    }
+  }
+  
+  /* Card Alignment */
+  .projects-grid > div {
+    place-self: center; /* Center-align cards */
+  }
+  

@@ -1,0 +1,100 @@
+/* Container Styles */
+.card-container {
+    border: 1px solid #facc15; /* Yellow accent border */
+    border-radius: 8px; /* Rounded corners */
+    width: 300px; /* Default width */
+    background-color: #000; /* Dark background */
+    color: #ffffff; /* White text */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Image Section */
+  .card-image img {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  /* Content Section */
+  .card-content {
+    padding: 16px; /* Inner padding */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Spacing between elements */
+  }
+  
+  /* Title */
+  .card-title {
+    font-size: 1.8rem; /* Larger text */
+    font-weight: 500; /* Semi-bold */
+    color: #f59e0b; /* Yellow-400 */
+  }
+  
+  /* Description */
+  .card-desc {
+    font-size: 1rem;
+    color: whitesmoke; /* Gray-300 */
+    line-height: 1.5;
+  }
+  
+  /* Tags Section */
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+  }
+  
+
+  /* Tags styles */
+.tags {
+    background-color: #fd8d30; /* Default background color */
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Specific tag styles */
+  .tags:last-child {
+    margin-right: 0;
+  }
+  
+  .tags:nth-child(2) {
+    background-color: yellowgreen;
+  }
+  
+  .tags:nth-child(3) {
+    background-color: purple;
+  }
+  
+  .tags:nth-child(4) {
+    background-color: teal;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 640px) {
+    .card-container {
+      width: 350px; /* Increased width for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-title {
+      font-size: 2.3rem; /* Larger title on larger screens */
+    }
+  
+    .card-desc {
+      font-size: 1.125rem; /* Slightly larger description text */
+    }
+  }
+  

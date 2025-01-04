@@ -1,0 +1,80 @@
+.about-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem; /* ADD THIS LINE FOR SPACING */
+  margin-top: 36px;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; /* INCREASE GAP FOR LARGER SCREENS */
+  }
+}
+
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.about-colons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.about-icon-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap:1rem;
+}
+
+.about-icon {
+  color: #f97316; /* Tailwind orange-500 */
+  font-size: 22px;
+}
+
+.link {
+  color: #3b82f6; /* Tailwind blue-500 */
+  text-decoration: underline;
+}
+
+.about-description {
+  margin-top: 4rem;
+  max-width: 800px;
+  font-weight: bold;
+  color: #f59e0b; /* Tailwind yellow-600 */
+  transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,18 @@
+.footer-container {
+    background-image: url('/ft-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    color: #4a4a4a; /* Equivalent to text-gray-700 */
+  }
+  
+  .footer-text {
+    text-align: center;
+  }
+  
+  .footer-text p:first-child {
+    margin-bottom: 0.5rem;
+  }
+  

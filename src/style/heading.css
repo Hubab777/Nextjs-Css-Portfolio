@@ -1,0 +1,15 @@
+/* Heading Styles */
+.heading-container {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .heading-title {
+    display: inline-block;
+    border-bottom: 4px solid whitesmoke; /* Yellow color */
+    padding-bottom: 0.5rem;
+    font-size: 3rem; 
+    color:#f59e0b; /* Yellow color */
+    font-weight: semibold;
+  }
+  

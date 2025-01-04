@@ -1,0 +1,64 @@
+/* Base styles */
+body {
+  color: #fff;
+  background-color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+/* Component styles */
+
+/* Menu links */
+.menuLink {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuLink:hover {
+  color: #fd8d30; /* Highlight color */
+}
+
+/* Tags styles */
+.tags {
+  background-color: #fd8d30; /* Default background color */
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 3px 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+/* Specific tag styles */
+.tags:last-child {
+  margin-right: 0;
+}
+
+.tags:nth-child(2) {
+  background-color: yellowgreen;
+}
+
+.tags:nth-child(3) {
+  background-color: purple;
+}
+
+.tags:nth-child(4) {
+  background-color: teal;
+}
+
+/* Input field styles */
+.inputstyle {
+  outline: 2px solid #fd8d30; /* Outline color */
+  outline-offset: 2px;
+  border: 1px solid #4b5563; /* Border color similar to gray-600 in Tailwind */
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.inputstyle:focus {
+  outline: 3px solid #fd8d30; /* Focus state outline */
+  border-color: #fd8d30; /* Change border color on focus */
+}

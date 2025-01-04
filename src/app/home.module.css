@@ -1,0 +1,12 @@
+/* Main container */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Spacer for separation */
+  .spacer {
+    margin-top: 2rem; /* Adds space before the footer */
+  }
+  
