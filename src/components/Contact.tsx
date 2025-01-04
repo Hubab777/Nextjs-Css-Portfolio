@@ -15,7 +15,7 @@ const Contact = () => {
 
   const [status, setStatus] = useState('');
 
-  const handleChange = (e: { target: { id: any; value: any; }; }) => {
+  const handleChange = (e: { target: { id: string; value: unknown; }; }) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -32,7 +32,7 @@ const Contact = () => {
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      setStatus('Failed to send the message. Please try again.');
+      setStatus('There is an error to send the message. Please try again.');
     }
   };
 
