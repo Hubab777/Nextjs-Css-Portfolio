@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div>
-            <p className="hero-name">ℑ'𝔪</p>
+            <p className="hero-name">ℑ a𝔪</p>
             <p className="hero-name">ℌ𝔲𝔟𝔞𝔟</p>
             <p className="hero-name">ℑ𝓀𝔯𝔞𝔪</p>
           </div>
