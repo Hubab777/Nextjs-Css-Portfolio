@@ -31,8 +31,8 @@ const Contact = () => {
       await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate delay
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      setStatus('There is an error to send the message. Please try again.');
+    } catch {
+      setStatus('Failed to send the message. Please try again.');
     }
   };
 
